@@ -17,9 +17,11 @@ That file includes a complete Microsoft Visual Studio 2022 project folder with s
 ## Rationale - Why use an old library?
 In the context of education, we want students to be able to create C++ programs that have graphics with minimal effort, right from the beginning. The "empty" Windows Application template in Visual Studio has 170+ lines of complicated code with handlers and classes. So many Introduction to Computer Science classes avoid that altogether and teach students C++ using just command-line text-based program.
 
-Using the WinBGI graphics library is a good middle ground between just teaching students only text-based program (which many see as boring), and trying to teach first-years students how to write full Windows applications. Using this WinBGI system, in order to draw a line on the screen, students just need to know these two lines:
+Using the WinBGI graphics library is a good middle ground between just teaching students only text-based program (which many see as boring), and trying to teach first-years students how to write full Windows applications. Using this WinBGI system, in order to draw a line on the screen, students just need to use these three lines:
 ```
 #include "graphics.h"
+
+initwindow(800, 600);
 line(20, 20, 100, 80);
 ```
 This allows students to focus on learning coding, rather than having to figure out a whole modern GUI system. For example, here's a nested loop that draws boxes on the screen. It's easy to visualize how the nested loop works when it's graphically visible:
@@ -31,3 +33,30 @@ for (x = 300; x <= 500; x += 50) {
 	}
 }
 ```
+This is in contrast to what code looks like for the template Winodws Application code. Here are the first few lines:
+```
+#include "framework.h"
+#include "WindowsProject1.h"
+
+#define MAX_LOADSTRING 100
+
+// Global Variables:
+HINSTANCE hInst;                                // current instance
+WCHAR szTitle[MAX_LOADSTRING];                  // The title bar text
+WCHAR szWindowClass[MAX_LOADSTRING];            // the main window class name
+
+// Forward declarations of functions included in this code module:
+ATOM                MyRegisterClass(HINSTANCE hInstance);
+BOOL                InitInstance(HINSTANCE, int);
+LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
+INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
+
+int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
+                     _In_opt_ HINSTANCE hPrevInstance,
+                     _In_ LPWSTR    lpCmdLine,
+                     _In_ int       nCmdShow)
+```
+I think that would intimidate any first-year student trying to learn C++.
+
+Using this library allows teachers to focus on teaching C++ at the beginning, in a way that is visually interesting without being too complicated.
+
