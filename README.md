@@ -10,9 +10,17 @@ This was originally developed around 2008, but it still works with a modern IDE 
 Although this library is too outdated to use for a production environment, it provides an easy way for first-year students to use graphics in their C++ programs. These resources in this repository focus on the educational environment.
 
 ## Resources Included
-A good place to start would be with this ZIP file: example-graphics-functions.zip (449k)
+A good place to start would be with this ZIP file: [example-graphics-functions.zip](https://github.com/MatthewWeathers/winbgi-on-visual-studio/example-graphics-functions.zip) (449 K)
 
 That file includes a complete Microsoft Visual Studio 2022 project folder with sample code and the necessary library files. The sample code shows examples of common graphics functions. This one ZIP file contains everything you need to make your own graphics programs.
+
+For teachers who use the Canvas LMS (Learning Management System): you can import this IMSCC file, which includes lots of example code for students, labs, and assignments which you could use to teach a semester-long Intro to C++ Programming class:
+
+[template-intro-to-computer-science-csci105-tm-export.imscc](https://github.com/MatthewWeathers/winbgi-on-visual-studio/template-intro-to-computer-science-csci105-tm-export.imscc) (10.8 MB)
+
+Note: if you don't use Canvas, you could still download this file, change the file extension from .imscc to .zip, unzip it, and find some of the code examples in the compressed folder.
+
+Canvas
 
 ## Rationale - Why use an old library?
 In the context of education, we want students to be able to create C++ programs that have graphics with minimal effort, right from the beginning. The "empty" Windows Application template in Visual Studio has 170+ lines of complicated code with handlers and classes. So many Introduction to Computer Science classes avoid that altogether and teach students C++ using just command-line text-based program.
