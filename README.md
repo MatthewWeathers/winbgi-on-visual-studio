@@ -56,7 +56,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_ LPWSTR    lpCmdLine,
                      _In_ int       nCmdShow)
 ```
-I think that would intimidate any first-year student trying to learn C++.
+I think that would intimidate any first-year student trying to learn to program!
 
-Using this library allows teachers to focus on teaching C++ at the beginning, in a way that is visually interesting without being too complicated.
+Using this library allows teachers to focus on teaching the basics C++ at the beginning, in a way that is visually interesting without having to include complicated details about the user interface.
 
