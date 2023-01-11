@@ -10,7 +10,7 @@ This was originally developed around 2008, but it still works with a modern IDE 
 Although this library is too outdated to use for a production environment, it provides an easy way for first-year students to use graphics in their C++ programs. These resources in this repository focus on the educational environment.
 
 ## Resources Included
-A good place to start would be with this ZIP file: [example-graphics-functions.zip](https://github.com/MatthewWeathers/winbgi-on-visual-studio/example-graphics-functions.zip) (449 K)
+A good place to start would be with this ZIP file: [ExampleGraphics.zip](https://github.com/MatthewWeathers/winbgi-on-visual-studio/ExampleGraphics.zip) (449 K). Or try this working program, which shows an animated circle bouncing around the screen: [BouncingCircle.zip](https://github.com/MatthewWeathers/winbgi-on-visual-studio/BouncingCircle.zip) (448 K)
 
 That file includes a complete Microsoft Visual Studio 2022 project folder with sample code and the necessary library files. The sample code shows examples of common graphics functions. This one ZIP file contains everything you need to make your own graphics programs.
 
